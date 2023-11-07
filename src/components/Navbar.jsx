@@ -11,12 +11,16 @@ function Navbar() {
 
   const [isGalleryDropdownOpen, setIsGalleryDropdownOpen] = useState(false);
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
+  const [isAdmissionDropdownOpen, setIsAdmissionDropdownOpen] = useState(false);
 
   const handleHoverGallery = () => setIsGalleryDropdownOpen(true);
   const handleLeaveGallery = () => setIsGalleryDropdownOpen(false);
 
   const handleHoverAbout = () => setIsAboutDropdownOpen(true);
   const handleLeaveAbout = () => setIsAboutDropdownOpen(false);
+
+  const handleHoverAdmission = () => setIsAdmissionDropdownOpen(true);
+  const handleLeaveAdmission = () => setIsAdmissionDropdownOpen(false);
 
   return (
     <nav>
@@ -82,7 +86,10 @@ function Navbar() {
                 <Link to="/gallery/achievements" onClick={handleLeaveGallery}>
                   Achievements
                 </Link>
-                <Link to="/gallery/sportsandwellness" onClick={handleLeaveGallery}>
+                <Link
+                  to="/gallery/sportsandwellness"
+                  onClick={handleLeaveGallery}
+                >
                   Sports and Wellness
                 </Link>
                 <Link to="/gallery/media" onClick={handleLeaveGallery}>
@@ -94,13 +101,42 @@ function Navbar() {
         </li>
         <li>
           <NavLink to="/academics" onClick={closeMobileMenu}>
-            Academics
+            Academics & Beyond
           </NavLink>
         </li>
         <li>
           <NavLink to="/contact" onClick={closeMobileMenu}>
             Careers
           </NavLink>
+        </li>
+        <li>
+          <div
+            onMouseEnter={handleHoverAdmission}
+            onMouseLeave={handleLeaveAdmission}
+            className="nav-link"
+          >
+            Admission
+            <i className="fa-solid fa-angle-down" />
+            {isAdmissionDropdownOpen && (
+              <div className="dropdown-content">
+                <Link
+                  to="/admission/enquiry-form"
+                  onClick={handleLeaveAdmission}
+                >
+                  Enquiry Form
+                </Link>
+                <Link
+                  to="/admission/admission-guidelines"
+                  onClick={handleLeaveAdmission}
+                >
+                  Admission Guidelines
+                </Link>
+                {/* <NavLink to="/admission" onClick={closeMobileMenu}>
+            Admission
+          </NavLink> */}
+              </div>
+            )}
+          </div>
         </li>
         <li>
           <NavLink to="/badjate-group" onClick={closeMobileMenu}>

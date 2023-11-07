@@ -10,10 +10,10 @@ export const Home = () => {
   return (
     <div>
       <HomeMain />
-      <Program />
       <HomeAbout />
+      <Program />
       <Testimonial />
-      <VideoCarousel />
+      {/* <VideoCarousel /> */}
     </div>
   );
 };

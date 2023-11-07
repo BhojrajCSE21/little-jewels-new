@@ -28,22 +28,26 @@ const App = () => {
         <h1>Programs</h1>
         <div className="paragraph">
           <p>
-            Welcome to our Random Paragraph Generator! Our Generator uses
-            cutting edge technology to create unique and informative paragraph
-            on a wide range of topics ..{" "}
+            Our program is designed for the holistic development of each child.
+            We have developed an excellent hands on and age appropriate curriculum for
+            each level of the kindergarten. We have the below programs in which the
+            children can be enrolled.
           </p>
         </div>
       </div>
       <div className="cardsection">
         <div className="card-1" data-aos="slide-up" data-aos-once="false">
-          <img src="/Home_Program_Images/boy1.png" alt="image not loaded" />
+          <img
+            src="/Home_Program_Images/Pre-Nursery.PNG"
+            alt="image not loaded"
+          />
           <h1>Pre - Nursery</h1>
           <p>
             Age : 2+ <br />
-            Children born on or <br /> before 30th <br />
+            Children born on or <br /> before 31<sup>st</sup> <br />
             December, 2022
           </p>
-          <button className="program-button" type="button">
+          <button id="programButton" className="program-button" type="button">
             <a
               className="program-enquire_form"
               href="https://forms.gle/cCGiAVJvvatmPAv3A"
@@ -53,11 +57,11 @@ const App = () => {
           </button>
         </div>
         <div className="card-2" data-aos="slide-up">
-          <img src="/Home_Program_Images/boy2.png" alt="" />
+          <img src="/Home_Program_Images/Nursery.png" alt="" />
           <h1>Nursery</h1>
           <p>
             Age : 3+ <br />
-            Children born on or <br /> before 30th <br />
+            Children born on or <br /> before 31<sup>st</sup> <br />
             December, 2021
           </p>
           <button className="program-button" type="button">
@@ -70,11 +74,11 @@ const App = () => {
           </button>
         </div>
         <div className="card-3" data-aos="slide-up">
-          <img src="/Home_Program_Images/boy3.png" alt="" />
+          <img src="/Home_Program_Images/LKG.png" alt="" />
           <h1>Lower Kindergarten</h1>
           <p>
             Age : 4+ <br />
-            Children born on or <br /> before 30th <br />
+            Children born on or <br /> before 31<sup>st</sup> <br />
             December, 2020
           </p>
           <button className="program-button" type="button">
@@ -87,11 +91,11 @@ const App = () => {
           </button>
         </div>
         <div className="card-4" data-aos="slide-up">
-          <img src="/Home_Program_Images/boy4.png" alt="" />
+          <img src="/Home_Program_Images/UKG.png" alt="" />
           <h1>Upper Kindergarten</h1>
           <p>
             Age : 5+ <br />
-            Children born on or <br /> before 30th <br />
+            Children born on or <br /> before 31<sup>st</sup> <br />
             December, 2019
           </p>
           <button className="program-button" type="button">
@@ -105,11 +109,11 @@ const App = () => {
         </div>
 
         <div className="card-5" data-aos="slide-up">
-          <img src="/Home_Program_Images/boy5.png" alt="" />
+          <img src="/Home_Program_Images/STD 1.png" alt="" />
           <h1>Grade 1</h1>
           <p>
             Age : 6+ <br />
-            Children born on or <br /> before 30th <br />
+            Children born on or <br /> before 31<sup>st</sup> <br />
             December, 2018
           </p>
           <button className="program-button" type="button">
