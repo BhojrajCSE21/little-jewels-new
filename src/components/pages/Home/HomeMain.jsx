@@ -37,17 +37,17 @@ export const HomeMain = () => {
   return (
     <div className="home">
       <div className="section">
-        <div className="main-txt" data-aos="slide-right" data-aos-once="false">
+        <div className="main-txt" data-aos="" data-aos-once="false">
           <p>
             LITTLE <span className="change">JEWELS</span> KINDERGARTEN
           </p>
-          A Feeder Kindergarten of The Jain International School, Nagpur
+          A Feeder Kindergarten of <br></br> The Jain International School, <br></br>Nagpur
           <div className="btns">
             <button onClick={handleexplore}>E x p l o r e</button>
             <button onClick={handleenquire}>E n q u i r e&nbsp; N o w</button>
           </div>
         </div>
-        <div className="box-img" data-aos="slide-left">
+        <div className="box-img" data-aos="">
           <img src="/Home_Images/Kids4.png" alt="Home_Image" width={"200px"} />
         </div>
       </div>

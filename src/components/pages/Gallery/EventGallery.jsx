@@ -18,7 +18,7 @@ function EventGallery() {
   let imageUrl = [
     {
       id: 1,
-      path: "/Gallery_Images/Events_Images/fdofs1.JPG",
+      path: "/Gallery_Images/Events_Images/fdofs.jpeg",
       name: "First Day of School",
     },
     {
@@ -56,7 +56,7 @@ function EventGallery() {
     },
     {
       id: "ge2",
-      path: "https://photos.app.goo.gl/kMGJUHFZHScsV3eb8",
+      path: "https://photos.app.goo.gl/x2v34wfpwsbcJsG78",
       name: "Yes, I Can!",
     },
     {
@@ -76,7 +76,7 @@ function EventGallery() {
     },
     {
       id: "ge6",
-      path: "https://photos.app.goo.gl/mWthBtBM1PYczS5r9",
+      path: "https://photos.app.goo.gl/8qV4KPm6QpzUyFoN8",
       name: "Zip Zap Zoom Talent Hunt",
     },
     {
@@ -95,18 +95,6 @@ function EventGallery() {
       <div className="background-color-gallery">
         <div className="wrapper-gallery">
           <h1 className="main-heading-gallery_title">Event Gallery</h1>
-          {/* <div className="button-container">
-            {buttonTitles.map((button) => (
-              <Button
-                key={button.id}
-                title={button.title}
-                onClick={() => handleButtonClick(button.title)}
-                className={
-                  selectedButton === button.title ? "active-button" : ""
-                }
-              />
-            ))}
-          </div> */}
           <div className="card-container">
             {imageUrl.map(
               (image, index) =>
